@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
+    "baseUrl": "src",
     "paths": {
-      "@configuration/*": ["./src/configuration"],
-      "@providers/*": ["./src/providers"],
+      "@config/*": ["config/*"],
+      "@providers/*": ["providers/*"],
     },
     "target": "ES2021",
     "outDir": "dist",
