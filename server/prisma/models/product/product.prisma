@@ -1,0 +1,12 @@
+model Product {
+  id         String   @id @default(uuid())
+  position   Position @relation(fields: [positionId], references: [id])
+  positionId String
+  value      String
+  isBuyed    Boolean  @default(false)
+}
+
+model Position {
+  id       String    @id @default(uuid())
+  products Product[]
+}
